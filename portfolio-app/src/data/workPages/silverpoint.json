@@ -1,0 +1,236 @@
+{
+    "data": {
+        "title": "silverpoint",
+        "date": "2022",
+        "srcPath": "silverpoint",
+        "backgroundColor": "tan1",
+        "headerSrc": "12.png",
+        "introduction": "Silverpoint is a theoretical quarterly subscription box for sending traditioanl markmaking tools to both artists and collectors.",
+        "projectInfo": [
+            {
+                "displayName": "COURSE",
+                "data": [
+                    "Branding and Identity"
+                ]
+            },
+            {
+                "displayName": "MATERIALS",
+                "data": [
+                    "Watercolor paper, 140 lb",
+                    ""
+                ]
+            },
+            {
+                "displayName": "TECHNOLOGIES",
+                "data": [
+                    "Adobe Creative Suite: Illustrator, Photoshop, InDesign"
+                ]
+            }
+        ],
+        "singlePageData": [
+            {
+                "sectionTitle": "background",
+                "sectionTitleType": "level1",
+                "information": [
+                    {
+                        "subSectionTitle": "brief",
+                        "subSectionTitleType": "level2",
+                        "subSectionData": [
+                            {
+                                "type": "DESCRIPTION",
+                                "data": {
+                                    "text": [
+                                        "The goal of this project was to create a complete brand identity for an imagined product. We identified a specific audience and presented a final product with three deliverables: a wordmark, business card, and physical product."
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "DESCRIPTION",
+                                "data": {
+                                    "text": [
+                                        "The brand is named after the Silverpoint drawing technique, originating the in medieval times, where artists used silver wire in a stylus for markmaking on specially prepared paper."
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "sectionTitle": "process",
+                "sectionTitleType": "level1",
+                "information": [
+                    {
+                        "subSectionTitle": "ideate",
+                        "subSectionTitleType": "level2",
+                        "subSectionData": [
+                            {
+                                "type": "DESCRIPTION",
+                                "data": {
+                                    "text": [
+                                        "The first step was to identify a message behind the brand. I wanted Silverpoint to lean heavily towards traditional with a contemporary twist.",
+                                        "I wanted the wordmark to reflect the high quality of the product inside — as such, I looked I looked for typefaces that reminded me of traditional luxury in art. I chose a few typefaces to start my exploration that were either reminiscent of typefaces seen on Roman statue inscriptions, or luxurious, heavy-weighted serifs.",
+                                        "I focused on two different design directions, making a different wordmark and business card for each one.",
+                                        "For the secondary typeface on the business cards, I wanted to choose a serif font that was delicate but still had a medium contrast: FreightText Pro."
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "IMAGE_GRID",
+                                "data": {
+                                    "images": [
+                                        "TODO",
+                                        "TODO",
+                                        "TODO"
+                                    ],
+                                    "caption": "Goldenbook, Essones, Canto Pen, Canto Brush, FreightTextPro"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "subSectionTitle": "direction 1: Markmaking",
+                        "subSectionTitleType": "level2",
+                        "subSectionPath": "direction1",
+                        "subSectionData": [
+                            {
+                                "type": "DESCRIPTION",
+                                "data": {
+                                    "text": [
+                                        "My first direction focused on the purpose of the product itself: tools. I wanted to represent the action of slashing through the wordmark. I attempted this in multiple ways, with different typefaces, compositions, and font-sizes. I cut serifs from the ends of each letter to incorporate the slashes through each letter to avoid foreign angles that wouldn't be congruent with the rest of the wordmark."
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "IMAGE_GRID",
+                                "data": {
+                                    "images": [
+                                        "wordmark-01.png",
+                                        "wordmark-02.png",
+                                        "wordmark-03.png"
+                                    ],
+                                    "caption": "Slashed wordmarks. Essones, Goldenbook, Canto Pen bold."
+                                }
+                            },
+                            {
+                                "type": "IMAGE_GRID",
+                                "data": {
+                                    "images": [
+                                        "bc.png",
+                                        "bc2.png"
+                                    ],
+                                    "caption": "Direction 1: Business Card. Essones, Goldenbook, FreightText Pro."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "subSectionTitle": "direction 2: Opulence",
+                        "subSectionTitleType": "level2",
+                        "subSectionPath": "direction2",
+                        "subSectionData": [
+                            {
+                                "type": "DESCRIPTION",
+                                "data": {
+                                    "text": [
+                                        "The third direction centered around opulence and luxury — how could I make this wordmark over the top? I used an extremely heavy weight of Canto Brush and stretched as many parts of each letterform as I could, again taking serifs from the typeface itself to keep each added stroke visually similar to the rest of the wordmark."
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "IMAGE",
+                                "data": {
+                                    "images": [
+                                        "wordmark-01.png"
+                                    ],
+                                    "caption": "Opulence wordmark. Canto Brush Bold."
+                                }
+                            },
+                            {
+                                "type": "IMAGE_GRID",
+                                "data": {
+                                    "images": [
+                                        "bc.png",
+                                        "bc2.png"
+                                    ],
+                                    "caption": "Direction 2: Business Card. Canto Brush Bold, Goldenbook, FreightText Pro."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "subSectionTitle": "Feedback and discussion",
+                        "subSectionTitleType": "level2",
+                        "subSectionPath": "directionFinal",
+                        "subSectionData": [
+                            {
+                                "type": "DESCRIPTION",
+                                "data": {
+                                    "text": [
+                                        "I really loved the Opulence direction, but I received feedback from my peers and professors that I agreed with: it didn't speak to the product itself. While the wordmark was visually impactful, it could be a luxury clothing brand.",
+                                        "I decided to proceed with the Markmaking direction."
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "sectionTitle": "final deliverables",
+                "sectionTitleType": "level1",
+                "sectionPath": "directionFinal",
+                "information": [
+                    {
+                        "subSectionTitle": "wordmark",
+                        "subSectionTitleType": "level2",
+                        "subSectionData": [
+                            {
+                                "type": "DESCRIPTION",
+                                "data": {
+                                    "text": [
+                                        "For the final wordmark, I developed and refined the markmaking direction, using a lighter weight and smoothing out the slashed forms running through the wordmark."
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "IMAGE",
+                                "data": {
+                                    "images": [
+                                        "wordmark-01.png"
+                                    ],
+                                    "caption": "Final wordmark. Canto Pen, Goldenbook."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "subSectionTitle": "business card",
+                        "subSectionTitleType": "level2",
+                        "subSectionData": [
+                            {
+                                "type": "DESCRIPTION",
+                                "data": {
+                                    "text": [
+                                        "For the final business card, I focused on shapes and motifs associated with markmaking and design, playing with negative space and the tension between intersecting shapes.",
+                                        "The largest shape was inspired by the tip of a fountain pen. The exaggerated scale of the shapes in comparison to the website and brand tagline emphasizes the brand's focus on detail."
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "IMAGE_GRID",
+                                "data": {
+                                    "images": [
+                                        "bc-final-front.png",
+                                        "bc-final-back.png"
+                                    ],
+                                    "caption": "Final business card. Canto Pen, Goldenbook."
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

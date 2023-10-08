@@ -1,0 +1,3 @@
+HELPFUL TIPS
+
+running locally: npm start

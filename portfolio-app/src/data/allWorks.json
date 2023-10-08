@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "title": "silverpoint",
+            "date": "2022",
+            "srcPath": "silverpoint",
+            "backgroundColor": "tan2",
+            "coverSrc": "cover.png",
+            "purpose":"University course: Branding and Identity",
+            "tags": "Brand Design"
+        },
+        {
+            "title": "sun moon lake",
+            "date": "2022",
+            "srcPath": "sunmoonlake",
+            "backgroundColor": "blue2",
+            "coverSrc": "cover.png",
+            "purpose":"University course: Branding and Identity",
+            "tags": "Brand Design"
+        }
+    ]
+}

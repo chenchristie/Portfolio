@@ -1,0 +1,28 @@
+// ============== silverpoint ============== 
+{
+    "subSectionTitle": "direction 1",
+    "subSectionTitleType": "level2",
+    "subSectionPath": "direction1",
+    "subSectionData": [
+        {
+            "type": "description",
+            "subSectionData": [
+                "In this first direction, I wanted to focus on the cyclical nature of Silverpoint's products. The connection from the S the to P doesn't have a clear direction, as the line starts and end at a similar weight."
+            ]
+        },
+        {
+            "type": "image",
+            "subSectionData": [
+                "wordmark-01.png<>Infinity wordmark. Goldenbook."
+            ]
+        },
+        {
+            "type": "imageGrid",
+            "subSectionData": [
+                "bc.png",
+                "bc2.png",
+                "Direction 1: Business Card. Goldenbook, FreightText Pro."
+            ]
+        }
+    ]
+}

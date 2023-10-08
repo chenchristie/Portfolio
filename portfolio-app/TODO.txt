@@ -1,0 +1,16 @@
+====== RESEARCH ======
+
+
+======== CODE =======
+COMPONENTS:
+- filter list functionality
+- footer of page
+- button customization
+- ERROR LOADING PAGE – please try again / notify button with email
+    -> catch promise error
+
+======== PROCESS ======== 
+- components + struggles
+    - project box
+    - columns
+    - 
