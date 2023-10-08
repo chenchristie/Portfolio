@@ -34,7 +34,6 @@ const WorkPageContent: FC<FlexContainerProps> = ({columns, rowHeight}) => {
     useEffect(() => {
         const handleWindowResize = () => {
             setInnerWidth(window.innerWidth);
-            console.log("here");
         };
 
         window.addEventListener('resize', handleWindowResize);

@@ -13,7 +13,6 @@ import { NoData } from '../components/NoData';
 import { ProjectInfo } from '../components/singlePageComponents/ProjectInfo';
 
 const Introduction: FC<{ data: string }> = ({ data }) => {
-    console.log(data);
     return (
         <>
             <Header4> Introduction </Header4>
@@ -93,7 +92,7 @@ const DetailsPageContent: FC<DETAIL_PAGE_DATA & FlexContainerProps> = ({
                                         }}
                                         src={`${process.env.PUBLIC_URL}/images/work/${srcPath}/${headerSrc}`}
                                         onLoad={() => {
-                                            console.log("here");
+                                            console.log("project image visible");
                                             $('.projectImage').addClass("visible")
                                             setShowLoader(false);
                                         }} />

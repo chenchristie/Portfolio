@@ -55,7 +55,6 @@ const AboutPageContent: FC<FlexContainerProps> = ({columns, rowHeight}) => {
                             shadow 
                             shadowPosition={"bottomRight"} 
                             color={functionalColors.cutoutBack.tan}
-                            // src={profileImage}
                             src={`about/profile.jpg`}
                         >
                             <img
@@ -66,7 +65,7 @@ const AboutPageContent: FC<FlexContainerProps> = ({columns, rowHeight}) => {
                                 }}
                                 src = {`${process.env.PUBLIC_URL}/images/about/profile.jpg`}
                                 onLoad ={()=> {
-                                    console.log("here");
+                                    console.log("profile image visible");
                                     $('#profile').addClass("visible")
                                 }} 
                             />
