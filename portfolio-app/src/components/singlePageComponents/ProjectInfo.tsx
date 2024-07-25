@@ -1,13 +1,13 @@
 import React, { FC, ReactNode } from "react";
 import { colors } from "../../general/Constants";
 import ContextProvider from "../ContextProvider";
-import { Header1, SingleInfoWrapper } from "../styled";
-import { projectWorkDetails } from "../../general/Interfaces";
+import { Header1, Key, ProjectInfoContainer, SingleInfoWrapper, Value } from "../styled";
+import { ProjectWorkDetails } from "../../general/Interfaces";
 
 interface Props {
     children?: ReactNode,
     date: string,
-    projectInfo: projectWorkDetails[],
+    projectInfo: ProjectWorkDetails[],
 }
 
 
@@ -16,16 +16,31 @@ export const ProjectInfo: FC<Props> = ({
     date,
     projectInfo
 }) => {
-    console.log(projectInfo)
     return (
-        <div>
+        <ProjectInfoContainer>
             <SingleInfoWrapper>
-                <span> {date} </span>
+                <Key>{date}</Key>
             </SingleInfoWrapper>
-            <SingleInfoWrapper>
-                <span> something </span>
-                <span> something else </span>
-            </SingleInfoWrapper>
-        </div>
+            {
+                projectInfo.map(entry => {
+                    return (
+                        <SingleInfoWrapper key={entry.displayName}>
+                            <Key>{entry.displayName}</Key>
+                            <Value>
+                                {
+                                    entry.data.map(value => {
+                                        return (
+                                            <div key={value}>
+                                                {value}
+                                            </div>
+                                        );
+                                    })
+                                }
+                            </Value>
+                        </SingleInfoWrapper>
+                    );
+                })
+            }
+        </ProjectInfoContainer>
     );
 }

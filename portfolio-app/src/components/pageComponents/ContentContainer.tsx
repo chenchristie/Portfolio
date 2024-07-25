@@ -9,7 +9,7 @@ interface Props {
 
 export const ContentContainer: FC<Props> = ({children, width, padding}) => {
     let pageStyle = {
-        padding: padding ? padding : '0px 8%',
+        padding: padding ? padding : '0px 10%',
         width: width ? width : "unset",
     }
     return (

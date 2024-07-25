@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { fonts, fontSizes, styles } from "../general/Constants";
+import { fonts, fontSizes, styles, colors } from "../general/Constants";
 import { StyledComponentProps } from "../general/Interfaces";
 import { PageContainer } from "./pageComponents/PageContainer";
 
@@ -14,6 +14,21 @@ export const Header1 = styled.h1`
 `
 export const Header2 = styled.h2<React.CSSProperties & StyledComponentProps>`
     font-size: ${fontSizes.header2};
+    font-family: ${fonts.Bitters};
+    font-weight: 400;
+    text-transform: capitalize;
+
+    color: ${(props) => props.color ? props.color : "black"};
+    margin:0;
+
+    &.hoverable:hover{
+        color: ${(props) => props.hoverColor ? props.hoverColor : props.color};
+        font-weight: 600;
+    }
+`
+
+export const Header2_5 = styled.h2<React.CSSProperties & StyledComponentProps>`
+    font-size: ${fontSizes.header3};
     font-family: ${fonts.Bitters};
     font-weight: 400;
     text-transform: capitalize;
@@ -88,6 +103,15 @@ export const InvisibleSpan = styled.span`
 
 
 // =============== PAGE COMPONENTS ===============
+export const PageComponentWidth = styled.div`
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1500px) {
+        width: unset;
+    }
+`
 export const Space = styled.div`
     height: ${(props: React.CSSProperties) => props.height};
 `
@@ -95,7 +119,7 @@ export const Space = styled.div`
 export const ColumnComtainerDiv = styled.div`
     display: flex;
     flex-direction: row;
-    column-gap: 40px;
+    column-gap: 30px;
 `
 export const ProjectImage = styled.div`
     background-color: ${(props: React.CSSProperties) => props.backgroundColor};
@@ -173,11 +197,70 @@ export const FadeInPicture = styled.div`
 `
 
 // =============== DETAILS PAGE COMPONENTS ===============
-export const DetailsPageContainer = styled.div`
-    padding: 10px 8%;
+export const IntroductionTitle = styled(Header4)`
+    display: inline-block;
+    margin-bottom: 10px;
 `
+
+export const DetailsPageContainer = styled.div`
+    padding: 10px 10%;
+`
+
+//ProjectInfo
+export const ProjectInfoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 100%;
+    margin-bottom: 100px;
+`
+
 export const SingleInfoWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+
+`
+export const Key = styled.div`
+    width: 20%;
+    @media (max-width: 970px) {
+        width: 40%;
+    }
+    @media (max-width: 500px) {
+        width: 50%;
+    }
+    font-size: ${fontSizes.header4};
+    text-transform: uppercase;
+    color: ${(props: React.CSSProperties) => props.color ? props.color : "black"};
+    font-weight: 800;
+    white-space: ${(props) => props.whiteSpace ? props.whiteSpace : "unset"};;
+`
+export const Value = styled.div`
+    width: 80%;
+    font-size: ${fontSizes.header4};
+    text-transform: capitalize;
+    color: ${(props: React.CSSProperties) => props.color ? props.color : "black"};
+    font-weight: 400;
+    white-space: ${(props) => props.whiteSpace ? props.whiteSpace : "unset"};
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+`
+
+export const SectionTitle = styled(Header2)`
+    color: ${colors.darkGrey};
+    font-weight: 800;
+    margin-bottom: 30px;
+`
+export const SubSectionTitle = styled(Header2_5)`
+    margin-bottom: 20px;
+`
+
+export const ProjectDataItemContainer = styled.div`
+    margin-top: 70px;
+    margin-bottom: 40px;
+`
+
+export const SubSectionContainer = styled.div`
+    margin-bottom: 30px;
 `

@@ -1,5 +1,7 @@
 import React from "react";
 
+
+// ============== STYLES ==============
 export const colors = {
     // offWhite: "#F8F0E8",
     offWhite: "#F5F5F5",
@@ -38,8 +40,8 @@ export const functionalColors = {
 
 export const fontSizes = {
     header1: "45px",
-    header2: "35px",
-    header3: "35px",
+    header2: "30px",
+    header3: "25px",
     header4: "20px",
     copy: "20px",
     subtitle: "15px"

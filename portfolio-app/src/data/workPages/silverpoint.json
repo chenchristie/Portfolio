@@ -17,7 +17,7 @@
                 "displayName": "MATERIALS",
                 "data": [
                     "Watercolor paper, 140 lb",
-                    ""
+                    "Mohawk: Strathmore collection, Bright white, smooth, 100T "
                 ]
             },
             {
@@ -79,9 +79,15 @@
                                 "type": "IMAGE_GRID",
                                 "data": {
                                     "images": [
-                                        "TODO",
-                                        "TODO",
-                                        "TODO"
+                                        {
+                                            "image": "TODO"
+                                        },
+                                        {
+                                            "image": "TODO"
+                                        },
+                                        {
+                                            "image": "TODO"
+                                        }
                                     ],
                                     "caption": "Goldenbook, Essones, Canto Pen, Canto Brush, FreightTextPro"
                                 }
@@ -105,9 +111,15 @@
                                 "type": "IMAGE_GRID",
                                 "data": {
                                     "images": [
-                                        "wordmark-01.png",
-                                        "wordmark-02.png",
-                                        "wordmark-03.png"
+                                        {
+                                            "image": "wordmark-01.png"
+                                        },
+                                        {
+                                            "image": "wordmark-02.png"
+                                        },
+                                        {
+                                            "image": "wordmark-03.png"
+                                        }
                                     ],
                                     "caption": "Slashed wordmarks. Essones, Goldenbook, Canto Pen bold."
                                 }
@@ -116,8 +128,12 @@
                                 "type": "IMAGE_GRID",
                                 "data": {
                                     "images": [
-                                        "bc.png",
-                                        "bc2.png"
+                                        {
+                                            "image": "bc.png"
+                                        },
+                                        {
+                                            "image": "bc2.png"
+                                        }
                                     ],
                                     "caption": "Direction 1: Business Card. Essones, Goldenbook, FreightText Pro."
                                 }
@@ -133,7 +149,7 @@
                                 "type": "DESCRIPTION",
                                 "data": {
                                     "text": [
-                                        "The third direction centered around opulence and luxury — how could I make this wordmark over the top? I used an extremely heavy weight of Canto Brush and stretched as many parts of each letterform as I could, again taking serifs from the typeface itself to keep each added stroke visually similar to the rest of the wordmark."
+                                        "The second direction centered around opulence and luxury — how could I make this wordmark over the top? I used an extremely heavy weight of Canto Brush and stretched as many parts of each letterform as I could, again taking serifs from the typeface itself to keep each added stroke visually similar to the rest of the wordmark."
                                     ]
                                 }
                             },
@@ -141,7 +157,9 @@
                                 "type": "IMAGE",
                                 "data": {
                                     "images": [
-                                        "wordmark-01.png"
+                                        {
+                                            "image": "wordmark-01.png"
+                                        }
                                     ],
                                     "caption": "Opulence wordmark. Canto Brush Bold."
                                 }
@@ -150,8 +168,12 @@
                                 "type": "IMAGE_GRID",
                                 "data": {
                                     "images": [
-                                        "bc.png",
-                                        "bc2.png"
+                                        {
+                                            "image": "bc.png"
+                                        },
+                                        {
+                                            "image": "bc2.png"
+                                        }
                                     ],
                                     "caption": "Direction 2: Business Card. Canto Brush Bold, Goldenbook, FreightText Pro."
                                 }
@@ -161,7 +183,6 @@
                     {
                         "subSectionTitle": "Feedback and discussion",
                         "subSectionTitleType": "level2",
-                        "subSectionPath": "directionFinal",
                         "subSectionData": [
                             {
                                 "type": "DESCRIPTION",
@@ -179,11 +200,11 @@
             {
                 "sectionTitle": "final deliverables",
                 "sectionTitleType": "level1",
-                "sectionPath": "directionFinal",
                 "information": [
                     {
                         "subSectionTitle": "wordmark",
                         "subSectionTitleType": "level2",
+                        "subSectionPath": "directionFinal",
                         "subSectionData": [
                             {
                                 "type": "DESCRIPTION",
@@ -197,7 +218,9 @@
                                 "type": "IMAGE",
                                 "data": {
                                     "images": [
-                                        "wordmark-01.png"
+                                        {
+                                            "image":"wordmark-01.png"
+                                        }
                                     ],
                                     "caption": "Final wordmark. Canto Pen, Goldenbook."
                                 }
@@ -207,6 +230,7 @@
                     {
                         "subSectionTitle": "business card",
                         "subSectionTitleType": "level2",
+                        "subSectionPath": "directionFinal",
                         "subSectionData": [
                             {
                                 "type": "DESCRIPTION",
@@ -221,8 +245,12 @@
                                 "type": "IMAGE_GRID",
                                 "data": {
                                     "images": [
-                                        "bc-final-front.png",
-                                        "bc-final-back.png"
+                                        {
+                                            "image": "bc-final-front.png"
+                                        },
+                                        {
+                                            "image": "bc-final-back.png"
+                                        }
                                     ],
                                     "caption": "Final business card. Canto Pen, Goldenbook."
                                 }

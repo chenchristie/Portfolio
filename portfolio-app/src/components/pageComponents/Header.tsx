@@ -13,7 +13,7 @@ export const Header: FC<Props> = ({children, height, backgroundColor, sidePaddin
     let pageStyle = {
         height: height ? height : "unset",
         backgroundColor: backgroundColor ? backgroundColor : functionalColors.backgrounds.page,
-        padding: `50px ${sidePadding ? sidePadding : "8%"}`,
+        padding: `50px ${sidePadding ? sidePadding : "10%"}`,
         marginBottom: "60px"
     }
     return (

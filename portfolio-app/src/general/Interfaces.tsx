@@ -2,7 +2,7 @@ import React from 'react';
 import { ReactNode } from "react";
 
 export interface GeneralProps {
-    children?: ReactNode, 
+    children?: ReactNode,
     clickFunction?: Function,
     className?: string,
     id?: string
@@ -57,7 +57,7 @@ export interface FlexObjectProps {
     height?: string,
     minWidth?: string
 }
-export interface StyledComponentProps{
+export interface StyledComponentProps {
     hoverColor?: string,
 }
 
@@ -88,38 +88,48 @@ export interface DETAIL_PAGE_DATA {
         backgroundColor: string,
         headerSrc: string,
         introduction: string,
-        projectInfo: projectWorkDetails[],
-        singlePageData: singleWorkDetails[]
+        projectInfo: ProjectWorkDetails[],
+        singlePageData: SingleWorkDetails[]
     }
 }
 
 
-export interface projectWorkDetails {
+export interface ProjectWorkDetails {
     displayName: string,
-    data: string,
+    data: string[],
 }
-export interface singleWorkDetails {
+export interface SingleWorkDetails {
     sectionTitle?: string,
     sectionTitleType?: string,
     sectionPath?: string,
-    information: {
-        subSectionTitle?: string,
-        subSectionTitleType?: string,
-        subSectionPath?: string,
-        subSectionData: {
-            type: subSectionDataType,
-            data: subSectionDataData,
-        }[]
-    }[] 
+    information: SubSectionType[]
 }
 
-export enum subSectionDataType {
-    DESCRIPTION,
-    IMAGE,
-    IMAGE_GRID
+export interface SubSectionType {
+    subSectionTitle?: string,
+    subSectionTitleType?: string,
+    subSectionPath?: string,
+    subSectionData: SubSectionDataBlocks[]
 }
-export interface subSectionDataData {
+
+export interface SubSectionDataBlocks {
+    type: SUBSECTIONDATA_TYPE,
+    data: SubSectionDataData,
+}
+
+export enum SUBSECTIONDATA_TYPE {
+    DESCRIPTION = "DESCRIPTION",
+    IMAGE = "IMAGE",
+    IMAGE_GRID = "IMAGE_GRID"
+}
+
+export interface SubSectionDataData {
     text?: string[],
-    images?: string[],
+    images?: Image[],
     caption: string
+}
+
+export interface Image {
+    image: string,
+    caption?: string
 }

@@ -23,11 +23,11 @@ function App() {
       <ContextProvider.Provider value>
         <BrowserRouter>
           <Routes>
-            <Route path='/*' element={<CheckBackIn />} />
-            {/* <Route path="/Portfolio" element={<About />} />
+            {/* <Route path='/*' element={<CheckBackIn />} /> */}
+            <Route path="/Portfolio" element={<About />} />
             <Route path="/About" element={<About />} />
             <Route path="/Work" element={<Work />} />
-            <Route path="/Details" element={<Details />} /> */}
+            <Route path="/Details" element={<Details />} />
           </Routes>
         </BrowserRouter>
       </ContextProvider.Provider>

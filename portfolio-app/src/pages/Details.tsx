@@ -5,17 +5,18 @@ import { Picture } from '../components/Picture';
 import { HeaderComponent } from '../components/Text/HeaderComponent';
 import { colors, EMPTY_DETAILS_PAGE, functionalColors, pageInfoTypes, styles } from '../general/Constants';
 import { FlexContainerProps, FlexObjectProps, PictureProps, DETAIL_PAGE_DATA } from '../general/Interfaces';
-import { ColumnComtainerDiv, Copy, DetailsPageContainer, FadeInDiv, Header1, Header4, Space } from '../components/styled';
+import { ColumnComtainerDiv, Copy, DetailsPageContainer, FadeInDiv, Header1, Header4, IntroductionTitle, PageComponentWidth, Space } from '../components/styled';
 import { ColumnContainer } from '../components/pageComponents/ColumnContainer';
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { Header } from '../components/pageComponents/Header';
 import { NoData } from '../components/NoData';
 import { ProjectInfo } from '../components/singlePageComponents/ProjectInfo';
+import { ProjectDataItem } from '../components/singlePageComponents/ProjectDataItem';
 
 const Introduction: FC<{ data: string }> = ({ data }) => {
     return (
         <>
-            <Header4> Introduction </Header4>
+            <IntroductionTitle> Introduction </IntroductionTitle>
             <Copy width={"80%"}>
                 {data}
             </Copy>
@@ -64,49 +65,72 @@ const DetailsPageContent: FC<DETAIL_PAGE_DATA & FlexContainerProps> = ({
     return (
         <FadeInDiv className="fadeIn">
             <Header backgroundColor={colors[backgroundColor as keyof typeof colors]}>
-                <ColumnComtainerDiv>
-                    <ColumnContainer
-                        basis={basis}
-                        column={6}
-                    >
-                        <Header1> {title} </Header1>
-                        <Introduction data={introduction} />
-
-                    </ColumnContainer>
-                    <ColumnContainer
-                        basis={basis}
-                        column={4}
-                    >
-                        <Picture
-                            fadeIn
-                            className="projectImage"
-                            src={`work/${srcPath}/${headerSrc}`}
+                <PageComponentWidth>
+                    <ColumnComtainerDiv>
+                        <ColumnContainer
+                            basis={basis}
+                            column={4}
                         >
-                            {
-                                showLoader ?
-                                    <img
-                                        className="show"
-                                        style={{
-                                            position: "absolute",
-                                            display: "none"
-                                        }}
-                                        src={`${process.env.PUBLIC_URL}/images/work/${srcPath}/${headerSrc}`}
-                                        onLoad={() => {
-                                            console.log("project image visible");
-                                            $('.projectImage').addClass("visible")
-                                            setShowLoader(false);
-                                        }} />
-                                    : <></>
-                            }
-                        </Picture>
-                    </ColumnContainer>
-                </ColumnComtainerDiv>
+                            <Header1> {title} </Header1>
+                            <Introduction data={introduction} />
+
+                        </ColumnContainer>
+                        <ColumnContainer
+                            basis={basis}
+                            column={5}
+                        >
+                            <Picture
+                                fadeIn
+                                className="projectImage"
+                                src={`work/${srcPath}/${headerSrc}`}
+                            >
+                                {
+                                    showLoader ?
+                                        <img
+                                            className="show"
+                                            style={{
+                                                position: "absolute",
+                                                display: "none"
+                                            }}
+                                            src={`${process.env.PUBLIC_URL}/images/work/${srcPath}/${headerSrc}`}
+                                            onLoad={() => {
+                                                console.log("project image visible");
+                                                $('.projectImage').addClass("visible")
+                                                setShowLoader(false);
+                                            }} />
+                                        : <></>
+                                }
+                            </Picture>
+                        </ColumnContainer>
+                    </ColumnComtainerDiv>
+                </PageComponentWidth>
             </Header>
 
-            {/* project info */}
             <DetailsPageContainer>
+                <PageComponentWidth>
+                    {/* project info */}
+                    <ProjectInfo date={date} projectInfo={projectInfo} />
 
-                <ProjectInfo date={date} projectInfo={projectInfo} />
+                    {/* single page data */}
+                    {
+                        singlePageData.map((dataBlock, index) => {
+                            return (
+                                <ProjectDataItem
+                                    srcPath={srcPath}
+                                    key={index}
+                                    SingleWorkDetails={dataBlock}
+                                />
+                            )
+                        })
+                    }
+                    {/* {
+                    singlePageData.map(data => {
+                        return (
+                            <ProjectDataItem SingleWorkDetails={data} />
+                        );
+                    })
+                } */}
+                </PageComponentWidth>
             </DetailsPageContainer>
         </FadeInDiv>
     );
